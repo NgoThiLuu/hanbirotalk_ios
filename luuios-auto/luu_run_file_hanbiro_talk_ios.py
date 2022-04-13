@@ -24,9 +24,6 @@ from sys import platform
 import ios_hanbiro_talk_python_luungo
 from ios_hanbiro_talk_python_luungo import execution_log, fail_log, error_log, Logging
 
-
-
-
 def Luu_hanbiro_talk_android_linux_Execution():
     error_menu = []
     ios_hanbiro_talk_python_luungo.log_in_hanbiro_talk_android()
