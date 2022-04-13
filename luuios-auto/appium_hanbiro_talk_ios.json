@@ -1,0 +1,642 @@
+{
+    "login_page": "groupware57.hanbiro.net",
+    "domain_input":"**/XCUIElementTypeTextField[`value == 'Domain'`]",
+    "txt_id":"**/XCUIElementTypeTextField[`value == 'ID'`]",
+    "input_user_user":"automationtest1",
+    "txt_pw":"**/XCUIElementTypeSecureTextField[`value == 'Password'`]",
+    "input_pw":"automationtest1!",
+    "btn_log_in":"//XCUIElementTypeButton[@name='Log In']",
+
+        "hanbiro_talk_ios":{
+            "check_crash_app_log_in":"//XCUIElementTypeButton[@name='COMPANY']",
+            "txt_search_contact":"//XCUIElementTypeStaticText[@name='Contacts']",
+            "txt_input_search_contact":"**/XCUIElementTypeTextField[`value == 'Please enter search terms'`]",
+            "search_contact_org_talk":"automationtest2",
+            "select_contact_org":"**/XCUIElementTypeStaticText[`label == 'AutomationTest2 ()'`]",
+            "icon_chat":"//XCUIElementTypeButton[@name='Chat']",
+            "icon_close_view_avatar":"ic profile exit",
+            "icon_tab_message":"**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTabBar/XCUIElementTypeButton[2]",
+            "icon_important_message":"//XCUIElementTypeNavigationBar[@name='HMChatListView']/XCUIElementTypeButton[1]",
+            "txt_input_search_contact_msg":"**/XCUIElementTypeTextField[`value == 'Please enter search terms'`]",
+            "tab_menu_message":"com.hanbiro.globalmessenger_v2:id/kb_tabmenu",
+            "txt_input_content_message":"//XCUIElementTypeApplication[@name='HanbiroTalk']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeTextView",
+            "icon_send_content_message":"ic flat send",
+            "content_message":"hello team",
+            "txt_content_message":"//*[contains(@text,'hello team')]",
+            "icon_attach_file_image":"icon kb photo",
+            "check_crash_click_icon_attach_file_image":"com.hanbiro.globalmessenger_v2:id/grid_view_photo",
+            "click_checkbox_select_file_image":"(//XCUIElementTypeButton[@name='kb checkbox'])[1]",
+            "check_select_attach_file_image_board":"(//XCUIElementTypeButton[@name='radio uncheck'])[1]",
+            "show_image_select":"//XCUIElementTypeButton[@name='ic flat send']",
+            "icon_send_image_message":"com.hanbiro.globalmessenger_v2:id/ic_send_file",
+            "aaaa_bbbbb":"XCUIElementTypeImage",
+            "check_crash_sent_image":"com.hanbiro.globalmessenger_v2:id/tc_photo_msg",
+            "hide_sent_image":"**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable",
+            "click_image_view_message":"//XCUIElementTypeApplication[@name='HanbiroTalk']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[last()]/XCUIElementTypeOther[1]",
+            "kkk_click_checkbox_select_file_image":"**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable",
+            
+            "view_image_in_message":"**/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable",
+            "click_icon_download_image_in_message":"**/XCUIElementTypeButton[`label == 'ic save to album'`]",
+            "show_done_view_image_in_message":"**/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable",
+            "done_view_image_in_message":"**/XCUIElementTypeButton[`label == 'Done'`]",
+            "show_content_copy_forward_in_message":"**/XCUIElementTypeButton[`label == 'Forward'`]",
+
+            "search_contact_org_forward":"automationtest3",
+            "txt_search_contact_org_forward":"**/XCUIElementTypeTextField[`value == 'Please enter search terms'`]",
+            "select_contact_fw_to":"**/XCUIElementTypeStaticText[`label == 'AutomationTest3 ()'`]",
+            "select_value_copy_in_message":"**/XCUIElementTypeButton[`label == 'Copy'`]",
+            "select_value_important_in_message":"**/XCUIElementTypeButton[`label == 'Important message'`]",
+            "select_value_paste_in_message":"**/XCUIElementTypeMenuItem[`label == 'Paste'`]",
+            "checkdata_fw_cop":"**/XCUIElementTypeButton[`label == 'btn forward'`][2]",
+            "select_value_quote_in_message":"**/XCUIElementTypeButton[`label == 'Quote text'`]",
+            "hidee_quote_in_message":"**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther",
+
+
+            "click_text_forward_in_message":"com.hanbiro.globalmessenger_v2:id/tv_forward",
+            "select_contact_fw":"//*[contains(@text,'AutomationTest3')]",
+            "send_fw_file_message":"**/XCUIElementTypeToolbar[`name == 'Toolbar'`]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[2]",
+            "txt_search_user_fw_contact":"com.hanbiro.globalmessenger_v2:id/ed_search_view",
+            "icon_more_contact":"//XCUIElementTypeButton[@name='ic menu more']",
+            "click_file_list":"//*[contains(@text,'File List')]",
+            "view_photo_in_file_list":"com.hanbiro.globalmessenger_v2:id/fl_item_image_img",
+
+
+            "click_board":"//XCUIElementTypeStaticText[@name='Board']",
+            "check_show_board_contact":"**/XCUIElementTypeCell[`name == 'Notifications'`]'",
+            "icon_write_board":"**/XCUIElementTypeButton[`label == 'Compose'`]",
+            "show_check_box_notifications":"**/XCUIElementTypeSwitch[`value == '0'`]",
+            "input_message_board":"**/XCUIElementTypeTable[`label == 'Empty list'`]",
+            "content_message_board":"Content Board",
+
+
+            "click_icon_attach_file_board":"**/XCUIElementTypeButton[`label == 'icon kb photo'`]",
+            "icon_done_send_file_board":"//XCUIElementTypeButton[@name='Done']",
+            "icon_send_board":"(//XCUIElementTypeButton[@name='Done'])[1]",
+            "check_item_board_success":"com.hanbiro.globalmessenger_v2:id/tc_item_board",
+            "check_show_view_board_success":"//XCUIElementTypeApplication[@name='HanbiroTalk']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]",
+            "view_image_board_success":"**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeImage",
+            "click_parent_image_board_success":"com.hanbiro.globalmessenger_v2:id/vg_main_parent_photo",
+            "icon_download_file_board":"com.hanbiro.globalmessenger_v2:id/share_sd_card",
+            "icon_edit_board":"//XCUIElementTypeButton[@name='icon kb more selected']",
+            "select_value_edit_board":"//XCUIElementTypeButton[@name='Edit']",
+            "edit_content_message_board":"Edit Content Board",
+            "edit_content_board":"com.hanbiro.globalmessenger_v2:id/ed_chat",
+            "show_content_edit_board":"com.hanbiro.globalmessenger_v2:id/tv_board_detail_content",
+            "select_value_delete_board":"//XCUIElementTypeButton[@name='Delete']",
+            "btn_ok_delete_board":"//*[contains(@text,'OK')]",
+
+
+            "click_tab_whisper":"**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTabBar/XCUIElementTypeButton[3]",
+            "click_icon_new_whisper":"//XCUIElementTypeNavigationBar[@name='HMWhisperListView']/XCUIElementTypeButton",
+            "txt_input_content_whisper":"**/XCUIElementTypeTextView[`value == 'Please enter content'`]",
+            "content_wwhisper":"content whisper",
+
+            "write_whisper_add_contact":"**/XCUIElementTypeButton[`label == 'Button'`][2]",
+            "send_whisper":"//XCUIElementTypeNavigationBar[@name='Whisper']/XCUIElementTypeButton[2]",
+
+
+
+
+
+
+            "show_list_contact_whisper":"com.hanbiro.globalmessenger_v2:id/list_view_org_company",
+            "search_contact_recippient_whisper":"com.hanbiro.globalmessenger_v2:id/vg_search_bar",
+            "icon_confirm_contact_recipient_whisper":"//XCUIElementTypeNavigationBar[@name='Contacts']/XCUIElementTypeButton[2]",
+            "show_contact_recipient_whisper":"com.hanbiro.globalmessenger_v2:id/rounded_image_photo_contact",
+            "icon_add_file_send_whisper":"**/XCUIElementTypeButton[`label == 'icon kb photo'`]",
+            "icon_send_file_whisper":"com.hanbiro.globalmessenger_v2:id/ic_send_file",
+            "list_view_file_whisper":"com.hanbiro.globalmessenger_v2:id/list_view_attachment",
+            "sent_whisper":"com.hanbiro.globalmessenger_v2:id/menu_whisper_write_send",
+            "click_txt_msg_text":"com.hanbiro.globalmessenger_v2:id/tc_txt_msg",
+            "click_value_copy_text":"com.hanbiro.globalmessenger_v2:id/tv_copy",
+            "click_txt_input_text":"com.hanbiro.globalmessenger_v2:id/edtMessage",
+            "select_paste":"//*[@text='PASTE']",
+            "select_add_new_member":"//*[contains(@text,'Add new member')]",
+            "select_contact_add_number":"//*[contains(@text,'AutomationTest3')]",
+            "icon_confirm_contact_add_member":"com.hanbiro.globalmessenger_v2:id/mnu_confirm_add_group",
+            "click_change_room_title":"//*[contains(@text,'Change room title')]",
+            "click_btn_ok_change_room":"//*[contains(@text,'OK')]",
+            "check_data_change_room":"//*[contains(@text,'room test')]",
+            "click_value_quote_message":"com.hanbiro.globalmessenger_v2:id/tv_quote_message",
+            "check_data_quote_message":"//*[contains(@text,'room test')]",
+            "click_value_important_message":"com.hanbiro.globalmessenger_v2:id/tv_important_message",
+
+
+
+
+            "select_whisper_view":"//XCUIElementTypeStaticText[@name='content whisper']",
+            "check_content_sent_whiper":"**/XCUIElementTypeButton[`label == 'btn forward'`][2]",
+            "select_view_full_whisper":"//*[contains(@text,'View full')]",
+            "check_click_view_full_whiper":"com.hanbiro.globalmessenger_v2:id/vg_att",
+            "click_image_download_whisper":"**/XCUIElementTypeButton[`label == 'ic save to album'`]",
+            "click_home_image_download_whisper":"**/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable",
+            "click_done_image_download_whisper":"**/XCUIElementTypeButton[`label == 'Done'`]",
+
+
+
+            "view_image_download_whisper":"com.hanbiro.globalmessenger_v2:id/imv_gesture_whisper_item",
+            "icon_download_image_whisper":"com.hanbiro.globalmessenger_v2:id/share_sd_card",
+            "icon_search_messages":"com.hanbiro.globalmessenger_v2:id/option_search_chat",
+            "txt_search_messages":"com.hanbiro.globalmessenger_v2:id/vg_search_active",
+            "icon_search_content":"com.hanbiro.globalmessenger_v2:id/imv_search",
+            "check_data_search_message":"//*[contains(@text,'hello team')]",
+            "icon_filter_content":"com.hanbiro.globalmessenger_v2:id/menu_filter_open",
+            "btn_today_filter_content":"com.hanbiro.globalmessenger_v2:id/rbtn_sort_type_week",
+            "icon_confirm_filter_content":"com.hanbiro.globalmessenger_v2:id/mnu_confirm_add_group",
+            "icon_forward_whisper":"**/XCUIElementTypeButton[`label == 'btn forward'`][2]",
+            "content_forward_whisper":"Forward Whisper",
+            "txt_search_content_whisper":"**/XCUIElementTypeTextField[`value == 'Please enter search terms'`]",
+            "input_content_whisper":"**/XCUIElementTypeTextField[`value == 'Please enter search terms'`]",
+            "content_search_whisper":"content whisper",
+            "btn_apply_search_whisper":"**/XCUIElementTypeButton[`label == 'APPLY'`]",
+
+
+            "icon_show_org":"com.hanbiro.globalmessenger_v2:id/imv_arrow",
+            "select_contact_fw_whisper":"//*[contains(@text,'AutomationTest3')]",
+            "txt_search_wwhisper":"com.hanbiro.globalmessenger_v2:id/vg_search_bar",
+            "click_icon_search_wwhisper":"com.hanbiro.globalmessenger_v2:id/imv_search",
+            "check_data_search_content_wwhisper":"**/XCUIElementTypeStaticText[`label == 'AutomationTest2'`]",
+            "click_icon_filter_whisper":"**/XCUIElementTypeNavigationBar[`name == 'HMWhisperListView'`]/XCUIElementTypeButton",
+
+            "btn_back_whisper":"**/XCUIElementTypeButton[`label == 'btn search back'`]",
+            "value_content_filter_whisper":"**/XCUIElementTypeStaticText[`label == 'CONTENT'`]",
+            "btn_all_filter_whisper":"com.hanbiro.globalmessenger_v2:id/rbtn_search_type_all",
+            "icon_confirm_filter_whisper":"com.hanbiro.globalmessenger_v2:id/mnu_confirm_add_group",
+            "check_en_crash_app":"//*[@text='Inbox']"
+
+           
+            
+        },
+        "testcase_result":{
+            "hanbiro_talk_ios":{
+                "log_in_hanbiro_talk":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Log In Hanbiro Talk",
+                        "status":"Pass",
+                        "description":"Log In Hanbiro Talk successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Log In Hanbiro Talk",
+                        "status":"Fail",
+                        "description":"Log In Hanbiro Talk Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "search_select_user":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Search User",
+                        "status":"Pass",
+                        "description":"Search User  successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Search User",
+                        "status":"Fail",
+                        "description":"Search User Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "access_tab_message":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"AccessTab Message",
+                        "status":"Pass",
+                        "description":"Access Tab Message successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Access Tab Message",
+                        "status":"Fail",
+                        "description":"Access Tab Message Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "sent_content_message":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Sent content",
+                        "status":"Pass",
+                        "description":"Sent content successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Sent content",
+                        "status":"Fail",
+                        "description":"Sent content Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "search_content_message":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Search content",
+                        "status":"Pass",
+                        "description":"Search content successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Search content",
+                        "status":"Fail",
+                        "description":"Search content Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "filter_content_message":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Filter content",
+                        "status":"Pass",
+                        "description":"Filter content successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Filter content",
+                        "status":"Fail",
+                        "description":"Filter content Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "send_file_message":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Sent File",
+                        "status":"Pass",
+                        "description":"Sent File successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Sent File",
+                        "status":"Fail",
+                        "description":"Sent File Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "view_file_message":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"View file",
+                        "status":"Pass",
+                        "description":"View file successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"View file",
+                        "status":"Fail",
+                        "description":"View file Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "download_file_message":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Download file",
+                        "status":"Pass",
+                        "description":"Download file successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Download file",
+                        "status":"Fail",
+                        "description":"Download file Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "forward_file_message":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Forward File",
+                        "status":"Pass",
+                        "description":"Forward File successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Forward File",
+                        "status":"Fail",
+                        "description":"Forward File Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "copy_message":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Copy Message",
+                        "status":"Pass",
+                        "description":"Copy Message successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Copy Message",
+                        "status":"Fail",
+                        "description":"Copy Message Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "view_file_list_message":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"View File List",
+                        "status":"Pass",
+                        "description":"show File List",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"View File List",
+                        "status":"Fail",
+                        "description":"Not show File List",
+                        "tester":"Luu"
+                    }
+                },
+                "add_member":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Add Member",
+                        "status":"Pass",
+                        "description":"Add Member successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Add Member",
+                        "status":"Fail",
+                        "description":"Add Member Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "change_room_title":{
+                    "pass":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Change room title",
+                        "status":"Pass",
+                        "description":"Change room title successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Message",
+                        "sub_menu":"Main Features",
+                        "testcase":"Change room title",
+                        "status":"Fail",
+                        "description":"Change room title Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "write_board":{
+                    "pass":{
+                        "menu":"Board",
+                        "sub_menu":"Main Features",
+                        "testcase":"Write Board",
+                        "status":"Pass",
+                        "description":"Write Board successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Board",
+                        "sub_menu":"Main Features",
+                        "testcase":"Write Board",
+                        "status":"Fail",
+                        "description":"Write Board Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "view_file_board":{
+                    "pass":{
+                        "menu":"Board",
+                        "sub_menu":"Main Features",
+                        "testcase":"View File",
+                        "status":"Pass",
+                        "description":"View File successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"View File",
+                        "status":"Fail",
+                        "description":"View File Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "download_file_board":{
+                    "pass":{
+                        "menu":"Board",
+                        "sub_menu":"Main Features",
+                        "testcase":"Download File",
+                        "status":"Pass",
+                        "description":"Download File successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"Download File",
+                        "status":"Fail",
+                        "description":"Download File Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "edit_board":{
+                    "pass":{
+                        "menu":"Board",
+                        "sub_menu":"Main Features",
+                        "testcase":"Edit Board",
+                        "status":"Pass",
+                        "description":"Edit Board successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"Edit Board",
+                        "status":"Fail",
+                        "description":"Edit Board Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "delete_board":{
+                    "pass":{
+                        "menu":"Board",
+                        "sub_menu":"Main Features",
+                        "testcase":"Edit Board",
+                        "status":"Pass",
+                        "description":"Edit Board successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"Edit Board",
+                        "status":"Fail",
+                        "description":"Edit Board Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "access_tab_whisper":{
+                    "pass":{
+                        "menu":"Whisper",
+                        "sub_menu":"Main Features",
+                        "testcase":"Access Tab Whisper",
+                        "status":"Pass",
+                        "description":"Access Tab Whisper successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"Access Tab Whisper",
+                        "status":"Fail",
+                        "description":"Access Tab Whisper Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "send_whisper":{
+                    "pass":{
+                        "menu":"Whisper",
+                        "sub_menu":"Main Features",
+                        "testcase":"Send Whisper",
+                        "status":"Pass",
+                        "description":"Send Whisper successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"Send Whisper",
+                        "status":"Fail",
+                        "description":"Send Whisper Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "view_whisper":{
+                    "pass":{
+                        "menu":"Whisper",
+                        "sub_menu":"Main Features",
+                        "testcase":"View Whisper",
+                        "status":"Pass",
+                        "description":"View Whisper successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"View Whisper",
+                        "status":"Fail",
+                        "description":"View Whisper Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "download_file_whisper":{
+                    "pass":{
+                        "menu":"Whisper",
+                        "sub_menu":"Main Features",
+                        "testcase":"Download File",
+                        "status":"Pass",
+                        "description":"Download File successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"Download File",
+                        "status":"Fail",
+                        "description":"Download File Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "forward_whisper":{
+                    "pass":{
+                        "menu":"Whisper",
+                        "sub_menu":"Main Features",
+                        "testcase":"Forward Whisper",
+                        "status":"Pass",
+                        "description":"Forward Whisper successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"Forward Whisper",
+                        "status":"Fail",
+                        "description":"Forward Whisper Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "search_whisper":{
+                    "pass":{
+                        "menu":"Whisper",
+                        "sub_menu":"Main Features",
+                        "testcase":"Search Whisper",
+                        "status":"Pass",
+                        "description":"Search Whisper successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"Search Whisper",
+                        "status":"Fail",
+                        "description":"Search Whisper Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "filter_whisper":{
+                    "pass":{
+                        "menu":"Whisper",
+                        "sub_menu":"Main Features",
+                        "testcase":"Filter Whisper",
+                        "status":"Pass",
+                        "description":"Filter Whisper successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Hanbiro Talk",
+                        "sub_menu":"Main Features",
+                        "testcase":"Filter Whisper",
+                        "status":"Fail",
+                        "description":"Filter Whisper Fail",
+                        "tester":"Luu"
+                    }
+                }
+            }
+        }
+}
