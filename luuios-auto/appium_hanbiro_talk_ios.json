@@ -57,8 +57,18 @@
             "send_fw_file_message":"**/XCUIElementTypeToolbar[`name == 'Toolbar'`]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[2]",
             "txt_search_user_fw_contact":"com.hanbiro.globalmessenger_v2:id/ed_search_view",
             "icon_more_contact":"//XCUIElementTypeButton[@name='ic menu more']",
-            "click_file_list":"//*[contains(@text,'File List')]",
-            "view_photo_in_file_list":"com.hanbiro.globalmessenger_v2:id/fl_item_image_img",
+            "click_file_list":"//XCUIElementTypeStaticText[@name='File List']",
+            "view_photo_in_file_list":"//XCUIElementTypeApplication[@name='HanbiroTalk']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]",
+            "click_add_new_member":"//XCUIElementTypeStaticText[@name='Add new member']",
+            "txt_search_contact_org_add_memeber":"**/XCUIElementTypeStaticText[`label == 'Contacts'`]",
+            "select_contact_add_memeber":"**/XCUIElementTypeStaticText[`label == 'AutomationTest3 ()'`]",
+            "search_contact_org_add_member":"automationtest3",
+
+            "click_change_room_name":"//XCUIElementTypeStaticText[@name='Change room name']",
+            "txt_input_room":"//XCUIElementTypeAlert[@name='Enter room title']/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther",
+            "room_name_change":"Room Test",
+            "save_change_room":"//XCUIElementTypeButton[@name='Save']",
+
 
 
             "click_board":"//XCUIElementTypeStaticText[@name='Board']",

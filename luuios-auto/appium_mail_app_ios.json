@@ -1,11 +1,11 @@
 {
     "login_page": "groupware57.hanbiro.net",
-    "domain_input":"**/XCUIElementTypeTextField[`value == 'Domain'`]",
-    "txt_id":"**/XCUIElementTypeTextField[`value == 'ID'`]",
+    "domain_input":"**/XCUIElementTypeOther[`label == 'Domain'`]",
+    "txt_id":"**/XCUIElementTypeOther[`label == 'ID'`]",
     "input_user_user":"automationtest1",
-    "txt_pw":"**/XCUIElementTypeSecureTextField[`value == 'Password'`]",
+    "txt_pw":"**/XCUIElementTypeOther[`label == 'Password'`]",
     "input_pw":"automationtest1!",
-    "btn_log_in":"//XCUIElementTypeButton[@name='Log In']",
+    "btn_log_in":"(//XCUIElementTypeOther[@name='Login '])[2]",
 
         "send_mail":{
             "icon_write_mail":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]",
