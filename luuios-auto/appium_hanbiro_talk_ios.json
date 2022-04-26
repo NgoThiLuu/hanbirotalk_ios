@@ -56,6 +56,7 @@
             "select_contact_fw":"//*[contains(@text,'AutomationTest3')]",
             "send_fw_file_message":"**/XCUIElementTypeToolbar[`name == 'Toolbar'`]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[2]",
             "txt_search_user_fw_contact":"com.hanbiro.globalmessenger_v2:id/ed_search_view",
+
             "icon_more_contact":"//XCUIElementTypeButton[@name='ic menu more']",
             "click_file_list":"//XCUIElementTypeStaticText[@name='File List']",
             "view_photo_in_file_list":"//XCUIElementTypeApplication[@name='HanbiroTalk']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]",
