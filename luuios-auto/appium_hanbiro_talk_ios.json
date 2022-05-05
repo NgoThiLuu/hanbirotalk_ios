@@ -64,6 +64,8 @@
             "txt_search_contact_org_add_memeber":"**/XCUIElementTypeStaticText[`label == 'Contacts'`]",
             "select_contact_add_memeber":"**/XCUIElementTypeStaticText[`label == 'AutomationTest3 ()'`]",
             "search_contact_org_add_member":"automationtest3",
+            "conffirm_add_contact_org_add_member":"**/XCUIElementTypeNavigationBar[`name == 'Contacts'`]/XCUIElementTypeButton[2]",
+
 
             "click_change_room_name":"//XCUIElementTypeStaticText[@name='Change room name']",
             "txt_input_room":"//XCUIElementTypeAlert[@name='Enter room title']/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther",
