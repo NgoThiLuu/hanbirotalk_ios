@@ -395,7 +395,7 @@ def hanbiro_talk_ios_message_input_msg():
         exit(0)
     time.sleep(1)
     
-
+    '''
     Logging("-----------------------------------------------Tab Message - Search content------------------------------------------------")
     try:
         click_icon_invite_contact = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["icon_invite_contact"])))
@@ -454,6 +454,9 @@ def hanbiro_talk_ios_message_input_msg():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Search content Fail")
         exit(0)
+
+
+    '''
     Logging("-----------------------------------------------Tab Message - Filter------------------------------------------------")
     try:
         click_list_messages_filter = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["icon_filter_content"])))
@@ -1012,7 +1015,7 @@ def hanbiro_talk_android_message_fw_copy():
     
     
     Logging("------------------------------------------------------Tab Message - Add new member------------------------------------------------------")
-
+    time.sleep(1)
 
     try:
         click_add_new_member = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["click_add_new_member"])))
@@ -1020,7 +1023,7 @@ def hanbiro_talk_android_message_fw_copy():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-    
+    time.sleep(1)
     txt_search_contact_org_add_member = driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["txt_search_contact_org_add_memeber"])
     if  txt_search_contact_org_add_member.is_displayed():
         Logging("=> No Crash App") 
@@ -1048,14 +1051,14 @@ def hanbiro_talk_android_message_fw_copy():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-    time.sleep(100)
+    time.sleep(3)
 
 
 
 
 
-    driver.swipe(start_x=523, start_y=1778, end_x=523, end_y=1089, duration=800)
-    time.sleep(1)
+    #driver.swipe(start_x=523, start_y=1778, end_x=523, end_y=1089, duration=800)
+    
 
 
     '''
@@ -1109,29 +1112,34 @@ def hanbiro_talk_android_message_fw_copy():
     #driver.back()
     #time.sleep(1)
 
-
+    '''
 
 
 
     
     
     Logging("------------------------------------------------------Tab Message - Change room title------------------------------------------------------")
+    
 
     try:
         click_change_name = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["click_change_room_name"])))
         click_change_name.click()
-        time.sleep(1)
+        time.sleep(4)
+        #clear_change_room_title = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["clear_change_room_name"])))
 
-
+        time.sleep(3)
+        #lear_change_room_title.click()
+        Logging("Clear Room => pass")
         enter_name_rooom=driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["txt_input_room"])
         enter_name_rooom.click()
         time.sleep(2)
         Logging("click  => pass")
-        click_change_room_title.clear()
         time.sleep(5)
         enter_name_rooom.send_keys(data["hanbiro_talk_ios"]["room_name_change"]+"\n")
-        click_save_change_room_title= WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["save_change_room"])))
-        time.sleep(1)
+        time.sleep(3)
+        click_save_change_room_title=driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["save_change_room"])
+        #click_save_change_room_title= WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["save_change_room"])))
+        time.sleep(3)
         click_save_change_room_title.click() 
         Logging("Input content  => pass")
         
@@ -1139,7 +1147,8 @@ def hanbiro_talk_android_message_fw_copy():
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
 
-    time.sleep(1000)
+    time.sleep(2)
+    '''
     try:
         click_change_room_title= WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["click_change_room_title"])))
         click_change_room_title.clear()
@@ -1178,9 +1187,12 @@ def hanbiro_talk_android_message_fw_copy():
         time.sleep(2)
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
+    '''
+   
+   
     driver.back()
     time.sleep(1)
-    '''
+    
     driver.back()
     time.sleep(1)
 
@@ -1222,6 +1234,31 @@ def hanbiro_talk_ios_write_board():
     time.sleep(1)
     '''
 
+    try:
+        txt_search_contact_org123= driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["txt_input_search_contact_msg"])
+        txt_search_contact_org123.click()
+        time.sleep(2)
+        input_search_contact_msg=driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["txt_input_search_contact_msg"])
+        input_search_contact_msg.click()
+        input_search_contact_msg.send_keys(data["hanbiro_talk_ios"]["search_contact_org_talk"]+"\n")
+        Logging("Input user => pass")
+        time.sleep(2)
+    except WebDriverException:
+        ValidateFailResultAndSystem("=> Crash App")
+        exit(0)
+    time.sleep(2)
+    Logging("-----------------------Select Contact------------------------")   
+    try:
+        select_contact_org=driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["select_contact_org"])
+        select_contact_org.click()
+        time.sleep(3)
+        show_icon_chat_mess = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["icon_chat"])))
+        show_icon_chat_mess.click()
+        time.sleep(5)
+        Logging("3. Select User  successfully")
+    except WebDriverException:
+        ValidateFailResultAndSystem("=> Crash App")
+        exit(0)
     
     try:
         click_icon_more_contact = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["icon_more_contact"])))
@@ -1733,7 +1770,7 @@ def whisper_hanbiro_talk_ios_send_whisper():
 
     click_download_image_in_wwhisper=driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["click_image_download_whisper"])
     click_download_image_in_wwhisper.click()
-    time.sleep(1)
+    #time.sleep(1)
     Logging("=> Click icon Download file successfully")
 
 

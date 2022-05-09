@@ -68,9 +68,10 @@
 
 
             "click_change_room_name":"//XCUIElementTypeStaticText[@name='Change room name']",
-            "txt_input_room":"//XCUIElementTypeAlert[@name='Enter room title']/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther",
+            "clear_change_room_name":"**/XCUIElementTypeButton[`label == 'Clear text'`]",
+            "txt_input_room":"**/XCUIElementTypeTextField[`value == 'room title'`]",
             "room_name_change":"Room Test",
-            "save_change_room":"//XCUIElementTypeButton[@name='Save']",
+            "save_change_room":"**/XCUIElementTypeButton[`label == 'Save'`]",
 
 
 
