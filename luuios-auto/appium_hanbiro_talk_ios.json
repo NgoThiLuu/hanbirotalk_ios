@@ -130,7 +130,7 @@
             "icon_confirm_contact_add_member":"com.hanbiro.globalmessenger_v2:id/mnu_confirm_add_group",
             "click_change_room_title":"//*[contains(@text,'Change room title')]",
             "click_btn_ok_change_room":"//*[contains(@text,'OK')]",
-            "check_data_change_room":"//*[contains(@text,'room test')]",
+            "check_data_change_room":"**/XCUIElementTypeOther[`label == 'Room Test'`]",
             "click_value_quote_message":"com.hanbiro.globalmessenger_v2:id/tv_quote_message",
             "check_data_quote_message":"//*[contains(@text,'room test')]",
             "click_value_important_message":"com.hanbiro.globalmessenger_v2:id/tv_important_message",
@@ -150,9 +150,14 @@
 
             "view_image_download_whisper":"com.hanbiro.globalmessenger_v2:id/imv_gesture_whisper_item",
             "icon_download_image_whisper":"com.hanbiro.globalmessenger_v2:id/share_sd_card",
-            "icon_search_messages":"com.hanbiro.globalmessenger_v2:id/option_search_chat",
-            "txt_search_messages":"com.hanbiro.globalmessenger_v2:id/vg_search_active",
-            "icon_search_content":"com.hanbiro.globalmessenger_v2:id/imv_search",
+            "icon_search_messages":"**/XCUIElementTypeButton[`label == 'ic flat search'`]",
+
+
+            "txt_search_messages":"**/XCUIElementTypeStaticText[`label == 'History'`]",
+            "data_search_messages":"hello",
+
+
+            "icon_search_content":"**/XCUIElementTypeNavigationBar[`name == 'History'`]/XCUIElementTypeButton[2]",
             "check_data_search_message":"//*[contains(@text,'hello team')]",
             "icon_filter_content":"com.hanbiro.globalmessenger_v2:id/menu_filter_open",
             "btn_today_filter_content":"com.hanbiro.globalmessenger_v2:id/rbtn_sort_type_week",
