@@ -65,6 +65,7 @@
             "select_contact_add_memeber":"**/XCUIElementTypeStaticText[`label == 'AutomationTest3 ()'`]",
             "search_contact_org_add_member":"automationtest3",
             "conffirm_add_contact_org_add_member":"**/XCUIElementTypeNavigationBar[`name == 'Contacts'`]/XCUIElementTypeButton[2]",
+            "check_data_add_contact_org_add_member":"**/XCUIElementTypeStaticText[`label == 'AutomationTest3'`]",
 
 
             "click_change_room_name":"//XCUIElementTypeStaticText[@name='Change room name']",

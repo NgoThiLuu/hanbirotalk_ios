@@ -525,14 +525,16 @@ def hanbiro_talk_ios_message_attach_file():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
+    time.sleep(1)
     checkbox_select_file_image = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["click_checkbox_select_file_image"])))
     checkbox_select_file_image.click()
+    time.sleep(2)
     try:
         check_crash_click_icon_attach_file = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["icon_send_content_message"])))
         if  check_crash_click_icon_attach_file.is_displayed():
             Logging("=> No Crash App") 
             Logging("=> Select File Image successfully")
-            time.sleep(1)
+            time.sleep(2)
             check_crash_click_icon_attach_file = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["icon_send_content_message"])))
             check_crash_click_icon_attach_file.click()
         else:
@@ -1067,6 +1069,15 @@ def hanbiro_talk_android_message_fw_copy():
         confirm_elect_contact_org.click()
         time.sleep(2)
         Logging("Add Contact => pass")
+        time.sleep(2)
+        check_data_add_contact = driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["check_data_add_contact_org_add_member"])
+        if  check_data_add_contact.is_displayed():
+            Logging("=> Add new member => Pass") 
+            TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["add_member"]["pass"])
+        else:
+            ValidateFailResultAndSystem("=> Not show image in file list")
+            TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["add_member"]["fail"])
+            exit(0)
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
