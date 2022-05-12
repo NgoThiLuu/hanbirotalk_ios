@@ -159,7 +159,7 @@
 
 
             "icon_search_content":"**/XCUIElementTypeNavigationBar[`name == 'History'`]/XCUIElementTypeButton[2]",
-            "check_data_search_message":"//*[contains(@text,'hello team')]",
+            "check_data_search_message":"**/XCUIElementTypeStaticText[`label == 'hello team'`][1]",
             "icon_filter_content":"com.hanbiro.globalmessenger_v2:id/menu_filter_open",
             "btn_today_filter_content":"com.hanbiro.globalmessenger_v2:id/rbtn_sort_type_week",
             "icon_confirm_filter_content":"com.hanbiro.globalmessenger_v2:id/mnu_confirm_add_group",

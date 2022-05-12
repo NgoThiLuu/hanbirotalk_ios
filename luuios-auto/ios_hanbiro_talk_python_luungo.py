@@ -405,7 +405,7 @@ def hanbiro_talk_ios_message_input_msg():
 
 
 
-    Logging("-----------------------------------------------Tab Message - Search content  -  CHUA VIET ------------------------------------------------")
+    Logging("-----------------------------------------------Tab Message - Search content ------------------------------------------------")
 
 
     try:
@@ -425,51 +425,23 @@ def hanbiro_talk_ios_message_input_msg():
         icon_search_keywork_message.click()
         time.sleep(2)
         Logging("=>2. Click Icon Search messages successfully")
+        time.sleep(2)
+       
+        check_data_search_message = driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["check_data_search_message"])
+        if  check_data_search_message.is_displayed():
+            Logging("=> No Crash App") 
+            TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["search_content_message"]["pass"])
+        else:
+            ValidateFailResultAndSystem("=> Crash App")
+            TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["search_content_message"]["fail"])
+            exit(0)
+        Logging("3.Search content successfully")
     except WebDriverException:
         Logging("=>2. Click Icon Search messages Fail")
         exit(0)
     time.sleep(2)
 
-    '''
-    try:
-        txt_search_keywork_message = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["txt_search_messages"])))
-        if  txt_search_keywork_message.is_displayed():
-            Logging("=> No Crash App") 
-            txt_search_keywork_message = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["txt_search_messages"])))
-            txt_search_keywork_message.click()
-            Logging("=>1. Click textbox search successfully")
-            driver.is_keyboard_shown()
-            driver.press_keycode(36)
-            driver.press_keycode(33)
-            driver.press_keycode(40)
-            driver.press_keycode(40)
-            driver.press_keycode(43)
-            driver.press_keycode(62)
-            driver.press_keycode(48)
-            driver.press_keycode(33)
-            driver.press_keycode(29)
-            driver.press_keycode(41)
-            driver.press_keycode(66)
-            Logging("2. Input Content Search successfully")
-            btn_search_message = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["icon_search_content"])))
-            btn_search_message.click()
-            check_data_search_message = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["check_data_search_message"])))
-            if  check_data_search_message.is_displayed():
-                Logging("=> No Crash App") 
-                TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["search_content_message"]["pass"])
-            else:
-                ValidateFailResultAndSystem("=> Crash App")
-                TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["search_content_message"]["fail"])
-                exit(0)
-            Logging("3.Search content successfully")
-        else:
-            ValidateFailResultAndSystem("=> Crash App")
-            exit(0)
-    except WebDriverException:
-        ValidateFailResultAndSystem("=> Search content Fail")
-        exit(0)
 
-    '''
 
     
     driver.back()
@@ -632,35 +604,26 @@ def hanbiro_talk_ios_message_attach_file():
     time.sleep(1)
     Logging("=> Click icon Download file successfully")
 
-
-
-    '''
-    try:
-        view_image_in_message = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["click_icon_download_image_in_message"])))
-        if  view_image_in_message.is_displayed():
-            Logging("=> No Crash App") 
-            TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["download_file_message"]["pass"])
-            #Logging("=> View File Image successfully")
-        else:
-            ValidateFailResultAndSystem("=> Crash App")
-            TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["download_file_message"]["fail"])
-            exit(0)
-    except WebDriverException:
-        ValidateFailResultAndSystem("=> Crash App")
-        exit(0)
-    '''
     
-
-
 
     home_img = driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["show_done_view_image_in_message"])
     home_img.click()
     time.sleep(1)
+
     click_done_view_image=driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["done_view_image_in_message"])
     click_done_view_image.click()
     time.sleep(2)
     
-
+    click_icon_more_contact = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["icon_more_contact"])))
+    if  click_icon_more_contact.is_displayed():
+        Logging("=> No Crash App") 
+        time.sleep(1)
+        TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["download_file_message"]["pass"])
+    else:
+        ValidateFailResultAndSystem("=> Crash App")
+        TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["download_file_message"]["fail"])
+        exit(0)
+    time.sleep(1)
 
 
 def hanbiro_talk_android_message_fw_copy():
@@ -1283,11 +1246,6 @@ def hanbiro_talk_ios_write_board():
     time.sleep(5)
 
 
-
-
-
-
-
     '''
     try:
         check_show_option_board = WebDriverWait(driver, 50).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["check_show_board_contact"])))
@@ -1342,9 +1300,6 @@ def hanbiro_talk_ios_board_view_download_file():
         i = i - 1
         break
     '''
-
-
-
 
 
 
@@ -1554,8 +1509,6 @@ def whisper_hanbiro_talk_ios_send_whisper():
             exit(0)
 
     
-
-
 
     Logging("------------------------------------------------------Whisper - Attach file -----------------------------------------------------")
     
@@ -1818,20 +1771,6 @@ def whisper_hanbiro_talk_ios_send_whisper():
             exit(0)
 
 
-
-        '''
-        show_button_search_all = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["btn_all_filter_whisper"])))
-        if  show_button_search_all.is_displayed():
-            Logging("=> No Crash App") 
-            click_icon_confirm_filter_whisper = WebDriverWait(driver, 50).until(EC.presence_of_element_located((By.ID, data["hanbiro_talk_ios"]["icon_confirm_filter_whisper"])))
-            click_icon_confirm_filter_whisper.click()
-            Logging("=> Filter Whisper successfully") 
-            TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["filter_whisper"]["pass"])
-        else:
-            ValidateFailResultAndSystem("=> Crash App")
-            TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["filter_whisper"]["fail"])
-            exit(0)
-        '''
     except WebDriverException:
         ValidateFailResultAndSystem("=> Filter Whisper Fail")
         exit(0)
