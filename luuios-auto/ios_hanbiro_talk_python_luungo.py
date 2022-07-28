@@ -1572,6 +1572,17 @@ def whisper_hanbiro_talk_ios_send_whisper():
     time.sleep(5)
 
     try:
+        close_push_wwhisper = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["check_push_whisper"])))
+        close_push_wwhisper.click()
+        Logging("=> Show Push") 
+    except WebDriverException:
+        Logging("=> Not Show Push")
+
+    time.sleep(2)
+
+
+
+    try:
         select_tab_whisper=driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["click_tab_whisper"])
         if  select_tab_whisper.is_displayed():
             Logging("=> No Crash App") 
@@ -1585,13 +1596,13 @@ def whisper_hanbiro_talk_ios_send_whisper():
         TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["send_whisper"]["fail"])
         exit(0)
 
-    time.sleep(10)
+    time.sleep(5)
     
-    driver.swipe(start_x=0, start_y=0, end_x=0, end_y=1000, duration=800)
+    #driver.swipe(start_x=0, start_y=0, end_x=0, end_y=1000, duration=800)
+    #time.sleep(2)
+    #driver.swipe(start_x=0, start_y=1000, end_x=0, end_y=0, duration=800)
 
-    time.sleep(2)
-
-    driver.swipe(start_x=0, start_y=1000, end_x=0, end_y=0, duration=800)
+    
 
     Logging("------------------------------------------------------Whisper - View Whisper -----------------------------------------------------")
     try:

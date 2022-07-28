@@ -110,7 +110,7 @@
             "write_whisper_add_contact":"**/XCUIElementTypeButton[`label == 'Button'`][2]",
             "send_whisper":"//XCUIElementTypeNavigationBar[@name='Whisper']/XCUIElementTypeButton[2]",
 
-
+            "check_push_whisper":"//XCUIElementTypeButton[@name='No']",
 
 
 
