@@ -82,7 +82,7 @@ udid = 'bc86e429485c13f34837866fde36e7ed55646317'
 app_path = 'Users/hanbiro/Desktop/luuios/HanbiroTalk.ipa'
 command_executor ='http://127.0.0.1:%s/wd/hub' % APPIUM_PORT
 
-desired_capabilities = {
+'''desired_capabilities = {
     'orientation' :'LANDSCAPE',
     "deviceName": "Hanbiro Iphone",
     "platformVersion": "12.5.5",
@@ -90,7 +90,22 @@ desired_capabilities = {
     "udid": udid,
     "app": app_path,
     "sendKeyStrategy":"setValue"
+}'''
+
+desired_capabilities = {
+    #"xcodeOrgId": "9689HPSFXL",
+    #"xcodeSigningId": "iPhone Developer",
+    "deviceName": "Hanbiro Iphone",
+    "platformName": "IOS",
+    "orientation": "PORTRAIT",
+    #"newCommandTimeout": 0,
+    "automationName": "XCUITest",
+    "derivedDataPath" : "/Users/hanbiro/Library/Developer/Xcode/DerivedData/WebDriverAgent-aghlrsejdreqngftgvcqwnjgrbou",
+    "wdaConnectionTimeout": 500000,
+    "udid": udid,
+    "app": app_path
 }
+
 driver = webdriver.Remote(command_executor,desired_capabilities)
 
 
@@ -1497,9 +1512,15 @@ def whisper_hanbiro_talk_ios_send_whisper():
         input_search_contact_org.send_keys(data["hanbiro_talk_ios"]["search_contact_org_talk"]+"\n")
         Logging("Input user => pass")
         time.sleep(1)
-        select_contact_org=driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["select_contact_org"])
+        #select_contact_org=driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["select_contact_org"])
+        #select_contact_org.click()
+        #time.sleep(3)
+
+       
+
+        select_contact_org=driver.find_element_by_ios_class_chain(data["hanbiro_talk_ios"]["select_contact_org_whisper"])
         select_contact_org.click()
-        time.sleep(1)
+        time.sleep(2)
         icon_confirm_contact_recippient_whisper = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.XPATH, data["hanbiro_talk_ios"]["icon_confirm_contact_recipient_whisper"])))
         icon_confirm_contact_recippient_whisper.click()
         Logging("=> 5. Click Icon Confirm Contact successfully") 
@@ -1564,9 +1585,13 @@ def whisper_hanbiro_talk_ios_send_whisper():
         TestCase_LogResult(**data["testcase_result"]["hanbiro_talk_ios"]["send_whisper"]["fail"])
         exit(0)
 
-    time.sleep(1)
+    time.sleep(10)
+    
+    driver.swipe(start_x=0, start_y=0, end_x=0, end_y=1000, duration=800)
 
+    time.sleep(2)
 
+    driver.swipe(start_x=0, start_y=1000, end_x=0, end_y=0, duration=800)
 
     Logging("------------------------------------------------------Whisper - View Whisper -----------------------------------------------------")
     try:

@@ -1,5 +1,5 @@
 {
-    "login_page": "groupware57.hanbiro.net",
+    "login_page": "tg01.hanbiro.net",
     "domain_input":"**/XCUIElementTypeTextField[`value == 'Domain'`]",
     "txt_id":"**/XCUIElementTypeTextField[`value == 'ID'`]",
     "input_user_user":"automationtest1",
@@ -11,8 +11,9 @@
             "check_crash_app_log_in":"//XCUIElementTypeButton[@name='COMPANY']",
             "txt_search_contact":"//XCUIElementTypeStaticText[@name='Contacts']",
             "txt_input_search_contact":"**/XCUIElementTypeTextField[`value == 'Please enter search terms'`]",
-            "search_contact_org_talk":"automationtest2",
+            "search_contact_org_talk":"automationtest",
             "select_contact_org":"**/XCUIElementTypeStaticText[`label == 'AutomationTest2 ()'`]",
+            "select_contact_org_whisper":"**/XCUIElementTypeStaticText[`label == 'AutomationTest1 ()'`]",
             "icon_chat":"//XCUIElementTypeButton[@name='Chat']",
             "icon_close_view_avatar":"ic profile exit",
             "icon_tab_message":"**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTabBar/XCUIElementTypeButton[2]",
